@@ -1,1 +1,11 @@
-<p>padredeportes.component works!</p>
+<div>
+    <h1>Padre Deportes</h1>
+    <h2 style="color: darkred;">{{mensaje}}</h2>
+    <ul>
+        @for (deporte of deportes; track deporte) {
+        <li>
+            <app-hijodeporte [sport]="deporte" (seleccionarFavPadre)="selectFavPadre($event)"></app-hijodeporte>
+        </li>
+    }
+    </ul>
+</div>
