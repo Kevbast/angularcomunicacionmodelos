@@ -1,0 +1,14 @@
+<div>
+    <h1 style="color: blueviolet;">LISTA DE PRODUCTOS</h1>
+
+        @for (prod of productos; track prod) {
+            <div style="margin: auto;">
+                <h2 style="color: blue;">
+                    {{prod.nombre}}, {{prod.precio}}$
+                </h2>
+                <img src="{{prod.imagen}}" style="width: 250px;height: 200px;"/>
+            </div>
+        }
+
+
+</div>

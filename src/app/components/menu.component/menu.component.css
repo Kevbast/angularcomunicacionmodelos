@@ -1,0 +1,60 @@
+/* --- Estilos del Contenedor de Navegación --- */
+#menu {
+    /* Eliminar el estilo de lista predeterminado */
+    list-style: none;
+    /* Eliminar relleno y margen predeterminados */
+    padding: 0;
+    margin: 0;
+    /* Usar Flexbox para alinear los elementos horizontalmente */
+    display: flex;
+    /* Centrar los elementos horizontalmente (opcional) */
+    justify-content: center;
+    /* Separar los elementos (opcional, si no usas margin en <li>) */
+    gap: 20px; 
+    /* Fondo del navbar */
+    background-color: #2c3e50; /* Azul oscuro elegante */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil para profundidad */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    padding: 10px 20px; /* Relleno interno */
+}
+
+/* --- Estilos de los Elementos de la Lista (<li>) --- */
+#menu li {
+    /* Puedes dejarlo sin estilos específicos aquí si usas 'gap' en #menu,
+       o usar margin-right para separarlos si prefieres no usar 'gap'. */
+    /* margin-right: 20px; */ 
+}
+
+/* --- Estilos de los Enlaces (<a>) --- */
+#menu li a {
+    /* Quitar la decoración de texto (subrayado) */
+    text-decoration: none;
+    /* Color del texto */
+    color: #ecf0f1; /* Gris claro para alto contraste */
+    /* Fuente en negrita */
+    font-weight: 600;
+    /* Convertir a mayúsculas para un look más limpio */
+    text-transform: uppercase;
+    /* Tamaño de fuente */
+    font-size: 1em;
+    /* Transición suave para los efectos hover */
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+    /* Padding para hacer click más fácil */
+    padding: 8px 15px; 
+    /* Estilo de bloque para permitir padding y ancho/alto */
+    display: block; 
+    /* Eliminar el separador '||' del texto del enlace para mejor diseño */
+    content: none; 
+}
+
+/* --- Efecto Hover/Focus para Enlaces --- */
+#menu li a:hover,
+#menu li a:focus {
+    /* Cambio de color del texto */
+    color: #f1c40f; /* Amarillo brillante para destacar */
+    /* Fondo sutil al pasar el mouse */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Ligeramente escalar para un efecto "pop" */
+    transform: translateY(-2px); 
+    border-radius: 4px; /* Bordes redondeados en el hover */
+}

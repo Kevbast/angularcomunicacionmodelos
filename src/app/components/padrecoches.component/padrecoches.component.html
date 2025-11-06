@@ -1,0 +1,8 @@
+
+<div>
+    <h2>Padre coches</h2>
+    <!-- que no coincida coche con la etiqueta del hijo [] -->
+    @for (coche of cochesArray; track coche) {
+        <app-hijocoche [car]="coche"></app-hijocoche>
+    }
+</div>
