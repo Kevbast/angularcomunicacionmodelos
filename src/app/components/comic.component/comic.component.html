@@ -1,4 +1,10 @@
-<div>
+<div style="float: left;">
     <h1 style="color: blue;">Comic</h1>
-    
+    <div >
+        <h2>{{comic.titulo}}</h2>
+        <img src="{{comic.imagen}}" style="width: 250px;height: 200px;">
+        <h3>{{comic.descripcion}}</h3>
+        <button (click)="seleccionarFavHijo()">Seleccionar Favorito</button>
+        <button (click)="eliminarComic()">Eliminar comic</button>
+    </div>
 </div>

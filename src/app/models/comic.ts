@@ -1,4 +1,4 @@
-export class comics{
+export class Comic{
 
     constructor(
         public titulo:string,
